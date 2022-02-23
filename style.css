@@ -8,7 +8,7 @@
     max-width: 1250px;
     margin: auto;
     background-color: #fff;
-    height: 130vh;
+    height: 160vh;
 }
 
 img{
@@ -17,7 +17,7 @@ img{
 
 .bg{
     background-color: #3E4759;
-    height: 130vh;
+    height: 160vh;
 }
 
 body{
@@ -463,4 +463,16 @@ body{
     transition: transform 0.5s;
 }
 
+.search{
+    padding: 10px 20px 10px 20px;
+}
 
+.charity{
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    background-color: #12de72;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+}

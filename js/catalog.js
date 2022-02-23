@@ -10,33 +10,22 @@ burger.addEventListener('click',()=>{
     } 
 })
 
-const modal = document.querySelector('.modal')
-const btnModal = document.querySelector('.processed')
-btnModal.addEventListener('click',()=>{
-    modal.classList.remove('none')
-}) 
+// const modal = document.querySelector('.modal')
+// const btnModal = document.querySelector('.processed')
+// btnModal.addEventListener('click',()=>{
+//     modal.classList.remove('none')
+// }) 
 
-const btnClose = document.querySelector('.btn-close')
-btnClose.addEventListener('click',()=>{
-    modal.classList.add('none')
-}) 
+// const btnClose = document.querySelector('.btn-close')
+// btnClose.addEventListener('click',()=>{
+//     modal.classList.add('none')
+// }) 
 
 const cancelBtn = document.querySelectorAll('.cancel-item')
 const items = document.querySelector('.items')
 const itemProduct = document.querySelectorAll('.item')
-items.addEventListener('click',(e)=>{
-    cancelBtn.forEach((item,index)=>{
-        if(e.target == item ){
-            itemProduct.forEach((gloablitem,id)=>{
-                if(index == id ){
-                    gloablitem.remove()
-                }
-            })
-        }
-        else{
-            console.log('hflhkgfl')
-        }
-
+cancelBtn.forEach((item)=>{
+    item.addEventListener('click',()=>{ 
+        item.parentNode.remove() 
     })
-
 })
